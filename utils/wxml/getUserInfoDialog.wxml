@@ -1,0 +1,17 @@
+<!-- 获取用户信息时网络请求失败的弹窗 -->
+<view wx:if='{{loginDialog.isShow}}' class='my-modal z-index1500'>
+  <view>
+    <text class='title'>提示</text>
+    <text class='content'>{{loginDialog.loginMsg}}</text>
+    <text class='try-again' bindtap='loginTryAgain'>再试一次</text>
+  </view>
+</view>
+
+<!-- 获取用户信息的弹窗 -->
+<view wx:if='{{getUserinfoDialog.isShow}}' class='my-modal z-index1500'>
+  <view>
+    <text class='title'>提示</text>
+    <text class='content' style='color:#242424'>我们将获取您的昵称和头像信息，为了不影响您的使用，请您选择允许</text>
+    <button class='singleBtn' open-type='getUserInfo' lang="zh_CN" bindgetuserinfo='getUserinfoBtnClick'>好的</button>
+  </view>
+</view>

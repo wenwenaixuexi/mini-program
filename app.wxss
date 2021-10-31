@@ -1,0 +1,143 @@
+/**app.wxss**/
+
+page {
+  width: 100%;
+  height: 100%;
+  color: #181818;
+  font-size: 14px;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+
+
+.container-row {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.container-column {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.clear {
+  clear: both;
+}
+
+/*字体颜色  */
+
+.text-hui {
+  color: #959595;
+}
+
+.color-red {
+  color: #f00;
+}
+
+/*线  */
+
+.border-bottom {
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.border-top {
+  border-top: 1px solid #f6f6f6;
+}
+
+.border-right {
+  border-right: 1px solid #f6f6f6;
+}
+
+.mt-5 {
+  margin-top: 5px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-inline-block {
+  display: inline-block;
+}
+
+.dis-block {
+  display: block;
+}
+
+.color-text-black {
+  color: #333;
+}
+
+.z-index1 {
+  z-index: 1;
+}
+
+.z-index2 {
+  z-index: 2;
+}
+
+.z-index3 {
+  z-index: 3;
+}
+
+.z-index4 {
+  z-index: 4;
+}
+
+.z-index5 {
+  z-index: 5 !important;
+}
+
+.z-index1000 {
+  z-index: 1000 !important;
+}
+
+.z-index1500 {
+  z-index: 1500 !important;
+}
+
+.z-index2000 {
+  z-index: 2000 !important;
+}
+
+/* button默认样式去掉 */
+
+.mybotton {
+  border: none;
+  box-sizing: content-box;
+}
+
+.mybotton::after {
+  border: none;
+}
+
+.btn-red {
+  padding: 10px 50px;
+  background-color: #f40;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px #c1c1c1;
+  color: #fff;
+  text-align: center;
+}

@@ -1,0 +1,127 @@
+/* 切换栏 */
+.swiper-tab{
+  height: 40px;
+  line-height: 40px;
+  background: #3b3b3b;
+  color: #fff;
+  display: flex;
+  position: relative;
+  z-index: 100;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.swiper-tab-list{
+  margin: 0 5px;
+  padding: 0 4px;
+  font-size: 15px;
+}
+
+.on{
+  border-bottom: 2px solid #fff;
+  color: yellow;
+}
+
+.container-orderDetail{
+  width:100%;
+  box-sizing: border-box;
+  background: white;
+  margin-top: 20px;
+}
+
+.merchant-info{
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.merchant-info .name{
+  justify-self: flex-start;
+  flex-grow: 1;
+}
+
+.merchant-info .stateStr{
+  color: red;
+}
+
+.goodsInfo{
+  box-sizing: border-box;
+  padding: 10px;
+  border-top: 1px solid #f4f4f4;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+
+.coverImage{
+  justify-self: flex-start;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  box-shadow: 0 0 8px #c1c1c1;
+  margin-right: 10px;
+}
+
+.goodsInfo .name{
+  flex-grow: 1;
+}
+
+.goodsInfo .num{
+  width: 10%;
+  margin-right:10px;
+}
+
+.goodsInfo .price{
+  width: 20%;
+  color: red;
+  text-align: right;
+}
+
+.createTime{
+   box-sizing: border-box;
+   padding: 10px;
+   border-top: 1px solid #f4f4f4;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 12px;
+}
+
+.container-calculate{
+   box-sizing: border-box;
+   padding: 10px;
+   border-top: 1px solid #f4f4f4;
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   font-size: 14px;
+}
+
+.container-calculate .name{
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.container-calculate .totalPrice{
+  font-size: 14px;
+  color: red;
+}
+
+.pay{
+  padding: 5px 18px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px #c1c1c1;
+  background: linear-gradient(to right,rgb(135,238,39),rgb(223,211,107));
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}

@@ -1,0 +1,83 @@
+<view class="hot-view">
+  <view class="tab">
+      <text class="active">所有景点</text>
+    <!-- <view bindtap="getaroundView"></view> -->
+  </view>
+</view>
+<navigator url = "scenic/s4/s4">
+  <view class="view">
+    <view class="img">
+      <text class="title"></text>
+      <image src="https://img2.baidu.com/it/u=534742310,3876779200&fm=26&fmt=auto&gp=0.jpg"></image>
+    </view>
+    <view class="name">
+      <view class="text">济南环城公园</view>
+      <view class="icons">
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_0.png"></image>
+      </view>
+      <view class="eva">评价4.4分</view>
+    </view>
+
+    <view class="addr">
+      <image class="icon" src="../../images/map_a.png"></image>
+      <view class="txt">山东省济南市历下区</view>
+    </view>
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </view>
+</navigator>
+  <view class="view">
+    <view class="img">
+      <text class="title"></text>
+      <image src="https://img0.baidu.com/it/u=2042409058,550190612&fm=26&fmt=auto&gp=0.jpg"></image>
+    </view>
+    <view class="name">
+      <view class="text">钓突泉</view>
+      <view class="icons">
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_0.png"></image>
+      </view>
+      <view class="eva">评价4.1分</view>
+    </view>
+
+    <view class="addr">
+      <image class="icon" src="../../images/map_a.png"></image>
+      <view class="txt">南门大街2-1号(近护城..</view>
+    </view>
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </view>
+
+
+
+  <view class="view">
+    <view class="img">
+      <text class="title"></text>
+      <image src="https://img1.baidu.com/it/u=2414279580,983623027&fm=26&fmt=auto&gp=0.jpg"></image>
+    </view>
+    <view class="name">
+      <view class="text">大明湖</view>
+      <view class="icons">
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_1.png"></image>
+        <image class="icon" src="../../images/star_0.png"></image>
+      </view>
+      <view class="eva">评价4.0分</view>
+    </view>
+
+    <view class="addr">
+      <image class="icon" src="../../images/map_a.png"></image>
+      <view class="txt">济南市历下区明湖路27..</view>
+    </view>
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </view>

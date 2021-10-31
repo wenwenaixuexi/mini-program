@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="good container-column">
+    <text class="name">{{good.name}}</text>
+    <view class="container-row imginfo">
+      <image class="coverImg" src="{{baseImgUrl+good.coverImage}}" mode="aspectFill"></image>
+      <text class="price">￥{{good.price}}</text>
+    </view>
+    <view class="des container-row text-hui">
+      <text class="left">店铺：</text>
+      <text class="right">{{good.shopname}}</text>
+    </view>
+   
+    <view class="des container-row text-hui">
+      <text class="left">简介：</text>
+      <text class="right">{{good.des}}</text>
+    </view>
+  </view>
+
+  <!--加入购物车 -->
+  <view class="container-row container-bottom">
+    <text class="add-cart" catchtap="addCart">加入购物车</text>
+  </view>
+</view>

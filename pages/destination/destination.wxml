@@ -1,0 +1,32 @@
+<view class="yemina">
+  <view class="page">
+  <view class="page__bd">
+    <view class="weui-search-bar">
+      <view class="weui-search-bar__form">
+        <view class="weui-search-bar__box">
+          <icon class="weui-icon-search_in-box" type="search" size="14"></icon>
+          <input type="text" class="weui-search-bar__input" placeholder="搜索" focus="{{inputShowed}}" bindinput="inputTyping" value="{{inputValues}}"/>
+          <view class="weui-icon-clear" bindtap="clearInput">
+            <icon type="clear" size="14"></icon>
+          </view>
+        </view>
+        <label class="weui-search-bar__label" bindtap="showInput" wx:if="{{inputShowed}}">
+          <icon class="weui-icon-search" type="search" size="14"></icon>
+          <view class="weui-search-bar__text">搜索</view>
+        </label>
+      </view>
+      <view class="weui-search-bar__cancel-btn" bindtap="hideInput" wx:if="{{!inputShowed}}">取消</view>
+    </view>
+  </view>
+</view>
+<!-- 选项卡 -->
+<view class='box' wx:if="{{inputShowed}}">
+  <!-- 左边菜单栏 -->
+  <view class='col-3'>
+    <scroll-view scroll-y="true" style="height: 950rpx;" scroll-with-animation="true">
+      <view class='{{page==item.ids?"box_active":"box_item"}}' wx:for="{{listCard}}" id="{{index}}" bindtap='clickChange'>{{item.name}}</view>
+    </scroll-view>
+  </view>
+  </view>
+</view>
+  

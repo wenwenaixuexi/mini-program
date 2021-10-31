@@ -1,0 +1,37 @@
+<view class="container">
+  <!-- 搜索 -->
+  <view class="container-search">
+    <input class="text-search" maxlength="10" placeholder="请输入搜索纪念品的名称" bindinput="onNameInput" />
+    <text class="searchIt" bindtap="searchIt">搜索</text>
+  </view>
+  <!-- 轮播图 -->
+  <view class="swiper">
+    <swiper indicator-dots="{{swiperInfo.indicatorDots}}" indicatorColor="{{swiperInfo.indicatorColor}}"
+      indicatorActiveColor="{{swiperInfo.indicatorActiveColor}}" autoplay="{{swiperInfo.autoplay}}"
+      interval="{{swiperInfo.interval}}" duration="{{swiperInfo.duration}}" circular="{{swiperInfo.circular}}"
+      style="width:{{swiperInfo.width}}px;height:{{swiperInfo.height}}px" mode="aspectFill">
+      <block wx:for="{{swiperInfo.swiperData}}">
+        <swiper-item>
+          <image src="{{baseImgUrl+item.coverImg}}" style="width:{{swiperInfo.width}}px;height:{{swiperInfo.height}}px"
+            bindtap="onScrollPageClick" data-goodsid="{{item.goodsId}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="container-jingpin">
+    <text>纪念品推荐</text>
+  </view>
+
+  <view class="goods-list">
+    <view class="item" wx:for="{{dataList}}" wx:key="item" bindtap="onGoodClick" data-index="{{index}}">
+      <view class="pic">
+        <image src="{{baseImgUrl+item.coverImage}}"></image>
+      </view>
+      <view class="content">
+        <view class="title">{{item.name}} </view>
+        <view class="desc">{{item.des}}</view>
+        <view class="price">￥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</view>

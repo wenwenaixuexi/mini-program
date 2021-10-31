@@ -1,0 +1,23 @@
+<!--pages/audio/scenic/s1/s1.wxml-->
+
+
+<block wx:for="{{landscapepintuanOrdersList}}" wx:key="this">
+    <view class="item">
+      <view class="landscapeInfo">
+        <image style="width:80px;height:80px" src="{{item.detail.landscapePic}}"></image>
+        <view class="detail">
+          <view>景点名称：{{item.detail.landscapeName}}</view>
+      
+          <view>商品简介：{{item.detail.landscapeDec}}</view>
+        
+       
+        </view>
+      </view>
+      </view>
+  </block>
+
+  <block wx:for="{{landscapepintuanOrdersList}}" wx:key="this">
+  <view class="title">直播地址：{{item.detail.landscapezhibo}}</view>
+
+  <button class="title" bindtap="jinian"> 购买纪念品</button>
+  </block>

@@ -1,0 +1,31 @@
+<view class="container">
+  <!-- 购物车列表 -->
+  <block wx:for='{{cartList}}' wx:key='item'>
+    <view class="container-row container-good">
+      <view class="container-row left">
+        <text catchtap="selectChange" data-index="{{index}}" class="{{item.checked?'selected':'unSelected'}}">√</text>
+        <image class='coverImg' src="{{baseImgUrl+item.coverImage}}" mode="aspectFill"></image>
+      </view>
+      <view class="container-column right">
+        <text class="name">商品名称：{{item.name}}</text>
+        <text class="price">￥{{item.price}}</text>
+        <text class="text-hui">商品描述：{{item.des}}</text>
+      </view>
+      <!-- 操作区域 -->
+      <view class="container-row container-operate">
+        <text class="minus" catchtap="minus" data-index="{{index}}">-</text>
+        <text class="count">{{item.count}}</text>
+        <text class="add" catchtap="add" data-index="{{index}}">+</text>
+      </view>
+    </view>
+  </block>
+
+  <!-- 底部下单区域 -->
+  <view class="container-row container-bottom">
+    <text class="selectAll" catchtap="selectAll">{{isSelectAll?"不选":"全选"}}</text>
+    <view class="container-row right">
+      <text class="price">￥{{totalPrice}}</text>
+      <text class="btn" catchtap="showCreateOrderPage">结算</text>
+    </view>    
+  </view>
+</view>

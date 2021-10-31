@@ -1,0 +1,10 @@
+<!--pages/mine/totravel/totravel.wxml-->
+<view class="order">
+
+<view wx:for="{{name}}"wx:key="text{{index}}"class="vicl">
+   <text class="jingq">{{name[index]}}</text>
+   <text class="jingqu">地址：{{dizhi[index]}}</text>
+   <text class="jingqu">推荐指数{{tuijian[index]}}</text>
+
+</view>
+</view>

@@ -1,0 +1,142 @@
+@import "../../utils/wxss/modalDialog.wxss";
+.container{
+  align-items: center;
+}
+
+.container-search{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background-color: #f4f4f4;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.text-search{
+  flex-grow: 1;
+  margin-right: 15px;
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  border-radius: 6px;
+  padding: 3px 6px;
+  margin: 10px;
+  font-size: 12px;
+  text-align: left;
+  color: #959595;
+}
+
+.searchIt{
+  padding: 5px 10px;
+  background-color:#f16c2e;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  border-radius: 4px;
+  
+}
+
+.swiper{
+  margin-top: 60px;
+
+}
+
+
+
+.container-jingpin{
+  align-items: center;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/*.book{
+  width: 90%;
+  padding: 10px;
+  background: #fff;
+  margin-top: 10px;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: center;
+}
+
+.book .name{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.book .imginfo{
+  justify-content: center;
+  margin-top: 10px;
+  align-items: flex-end;
+}
+
+.book .imginfo .coverImg{
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  box-shadow: 3px 3px 8px #c1c1c1;
+}
+
+.book .imginfo .price{
+  font-size: 14px;
+  color: red;
+  margin-left: 10px;
+}
+
+.book .des{
+  width: 100%;
+  margin-top:5px;
+  font-size: 12px;
+}
+
+.book .des .left{
+  min-width: 45px;
+  width: 45px;
+}
+
+.book .des .right{
+  color: black;
+}
+*/
+.goods-list{
+  width: 100%;
+  height: 100%;
+}
+.goods-list .item {
+  display:flex;
+  padding:20rpx 15rpx;
+  border-bottom:solid 2rpx  white;
+  border-top:solid 2rpx white;
+
+width: 100%;
+}
+.goods-list .item .pic{
+  width:200rpx;
+  height:200rpx;
+}
+.goods-list .item .pic image{
+  width:200rpx;
+  height:200rpx; 
+}
+.goods-list .item .content{
+margin-left:20rpx;
+}
+.goods-list .item .content .title{
+  font-size:32rpx;
+  font-weight: blod;
+}
+.goods-list .item .content .desc{
+  margin-top:10rpx;
+  font-size:24rpx;
+  color:#999;
+}
+.goods-list .item .content .price{
+color:#ff4d00;
+margin-top:10rpx
+}

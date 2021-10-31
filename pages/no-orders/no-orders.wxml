@@ -1,0 +1,4 @@
+<view class="text-center">
+		<image src="../../images/no-orders.png"></image>
+		<view class="mt-20">您没有相关订单</view>
+	</view>

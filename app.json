@@ -1,0 +1,78 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/user/index",
+    "pages/dingdan/dingdan",
+    "packageAudio/pages/audio/scenic/s1/s1",
+    "pages/destination/destination",
+    "pages/mysingleOrders/mysingleOrders",
+    "pages/myPintuanOrders/myPintuanOrders",
+    "pages/home/home",
+    "pages/singlePay/singlePay",
+    "pages/pintuanPay/pintuanPay",
+    "pages/orderCreate/orderCreate",
+    "pages/myOrders/myOrders",
+    "pages/orderDetail/orderDetail",
+    "pages/no-orders/no-orders",
+    "pages/contact/contact",
+    "packageAudio/pages/audio/audio",
+    "pages/cart/cart",
+    "pages/index/index",
+    "pages/publish/publish",
+    "pages/goodsDetail/goodsDetail",
+    "pages/address/address",
+    "pages/addressOperate/addressOperate",
+    "pages/goodsPay/goodsPay",
+    "packageAudio/pages/audio/scenic/s2/s2",
+    "packageAudio/pages/audio/scenic/s3/s3",
+    "packageAudio/pages/audio/scenic/s4/s4",
+    "packageAudio/pages/audio/scenic/s5/s5",
+    "pages/footprint/footprint",
+    "pages/audio2/audio2"
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "旅游购物小程序",
+    "navigationBarBackgroundColor": "#2C2F33",
+    "backgroundColor": "#27292D"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/search/search",
+        "text": "首页",
+        "iconPath": "images/icon/_home.png",
+        "selectedIconPath": "images/icon/home.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/star_0.png",
+        "selectedIconPath": "images/star_1.png",
+        "text": "纪念品"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "images/img_gouwuche.png",
+        "selectedIconPath": "images/img_gouwuche_filled.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "images/tab_contact_unselect.png",
+        "selectedIconPath": "images/tab_contact_select.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 15000,
+    "downloadFile": 10000
+  },
+  "debuge": true,
+  "sitemapLocation": "sitemap.json"
+}

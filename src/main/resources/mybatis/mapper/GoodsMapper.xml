@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.javaclimb.mapper.GoodsMapper">
+    <select id="getList" parameterType="goods" resultType="goods">
+        select g.*,t.name as typeName from goods g
+        left join goods_type t on t.id=g.typeId
+        <where>
+            <if test="state>0">
+                g.state = #{state}
+            </if>
+            <if test="id!=null and id!=''">
+                and g.id = #{id}
+            </if>
+            <if test="name!=null and name!=''">
+                and g.name like '%${name}%'
+            </if>
+            <if test="writer!=null and writer!=''">
+                and g.writer like '%${writer}%'
+            </if>
+            <if test="keyword!=null and keyword!=''">
+                and (g.name like '%${keyword}%' or g.writer like '%${keyword}%')
+            </if>
+            <if test="des!=null and des!=''">
+                and g.des like '%${des}%'
+            </if>
+            <if test="coverImage!=null and coverImage!=''">
+                and g.coverImage = #{coverImage}
+            </if>
+            <if test="price!=null and price!=''">
+                and g.price = #{price}
+            </if>
+            <if test="typeId!=null and typeId!=''">
+                and g.typeId = #{typeId}
+            </if>
+            <if test="ishot!=null and ishot!=''">
+                and g.ishot = #{ishot}
+            </if>
+
+        </where>
+    </select>
+
+    <insert id="add" parameterType="goods">
+        insert into goods(name,writer,des,coverImage,price,typeId,ishot,createTime,updateTime)
+        values(#{name},#{writer},#{des},#{coverImage},#{price},#{typeId},#{ishot},now(),now())
+    </insert>
+
+    <update id="delete" parameterType="goods">
+        update goods set state=2 where id=#{id}
+    </update>
+
+    <update id="update" parameterType="goods">
+        update goods set
+        name=#{name},
+        writer=#{writer},
+        des=#{des},
+        writer=#{writer},
+        coverImage=#{coverImage},
+        price=#{price},
+        typeId=#{typeId},
+        ishot=#{ishot},
+        updateTime=now()
+        where id=#{id}
+    </update>
+
+    <update id="updateState" parameterType="goods">
+        update goods set state=#{state} where id=#{id}
+    </update>
+
+</mapper>
+
+

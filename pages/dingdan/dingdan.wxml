@@ -1,0 +1,16 @@
+
+<scroll-view scroll-x="true" class="scroll-view-x">
+  <view class="scroll-view-item">
+  	<button class="{{currentTab==0 ? 'on' : ''}}" bindtap="swichNavTo1" data-current="1">已成团</button>
+  </view>
+  <view class="scroll-view-item">
+  	<button class="{{currentTab==0 ? 'on' : ''}}" bindtap="swichNavTo2" data-current="2">单独购买</button>
+  </view>
+  <view class="scroll-view-item">
+  	<button class="{{currentTab==0 ? 'on' : ''}}" bindtap="swichNavTo3" data-current="3">拼团失败</button>
+  </view>
+</scroll-view>
+<view>
+  <image src="../../images/no-orders.png"></image>
+</view>
+

@@ -1,0 +1,62 @@
+{
+  "pages":[
+    "pages/search/search",
+    "pages/home/home",
+    "pages/mysingleOrders/mysingleOrders",
+    "pages/singlePay/singlePay",
+
+    "pages/myPintuanOrders/myPintuanOrders",
+    "pages/pintuanPay/pintuanPay",
+    "pages/orderCreate/orderCreate",
+   
+    "pages/myOrders/myOrders",
+    "pages/orderDetail/orderDetail",
+    "pages/pintuan/pintuan",
+    "pages/dingdan/dingdan",
+    "pages/group/group",
+    "pages/no-orders/no-orders",
+    "pages/contact/contact",
+    "pages/my/my",
+    "packageAudio/pages/audio/audio",
+    "pages/cart/cart",
+    "pages/index/index",
+    "pages/publish/publish",
+
+   "pages/goodsDetail/goodsDetail",
+    "pages/address/address",
+ 
+    "pages/addressOperate/addressOperate",
+    "pages/goodsPay/goodsPay",
+ 
+    "pages/comment/comment",
+    "packageAudio/pages/audio/scenic/s1/s1",
+    "packageAudio/pages/audio/scenic/s2/s2",
+    "packageAudio/pages/audio/scenic/s3/s3",
+    "packageAudio/pages/audio/scenic/s4/s4",
+    "packageAudio/pages/audio/scenic/s5/s5",
+    "pages/footprint/footprint"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "WxParse",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#dddddd",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "Demo"
+    }, {
+      "pagePath": "pages/lab/lab",
+      "iconPath": "image/icon_API.png",
+      "selectedIconPath": "image/icon_API_HL.png",
+      "text": "实验室"
+    }]
+  }
+}

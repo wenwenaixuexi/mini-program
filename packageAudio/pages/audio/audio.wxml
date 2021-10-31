@@ -1,0 +1,69 @@
+<!--pages/find/find.wxml-->
+<view class="view-box">
+<view class="hot-view">
+  <view class="tab">
+      <text class="active">所有景点</text>
+    <!-- <view bindtap="getaroundView"></view> -->
+  </view>
+</view>
+<navigator url = "scenic/s3/s3">
+  <view class="view">
+    <view class="img" bindtap="liaojie">
+      <image src="https://tqimg.idongde.com/d/2020/01/10/1578630059796869.jpg"></image>
+    </view>
+    <view class="name">
+      <view class="text">兵马俑</view>
+      <view class="icons">
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_0.png"></image>
+      </view>
+      <view class="eva">评价4.1分</view>
+    </view>
+
+    <view class="addr">
+      <image class="icon" src="../../../images/map_a.png"></image>
+      <view class="txt">陕西省西安市临潼区秦始皇陵以东..</view>
+    </view>
+    <!-- 分割线 -->
+    <view class="divLine"></view>
+  </view>
+
+</navigator>
+
+
+
+<navigator url = "scenic/s4/s4">
+  <view class="view">
+    <view class="img">
+      <text class="title"></text>
+      <image src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2033098625,3551829079&fm=26&gp=0.jpg"></image>
+    </view>
+    <view class="name">
+      <view class="text">法门寺</view>
+      <view class="icons">
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_1.png"></image>
+        <image class="icon" src="../../../images/star_0.png"></image>
+      </view>
+      <view class="eva">评价4.4分</view>
+    </view>
+
+    <view class="addr">
+      <image class="icon" src="../../../images/map_a.png"></image>
+      <view class="txt">中国陕西省宝鸡市扶风县法门镇..</view>
+    </view>
+
+    <view class="divLine"></view>
+  </view>
+
+</navigator>
+  
+
+
+
+</view>

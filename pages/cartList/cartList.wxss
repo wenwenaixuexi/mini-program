@@ -1,0 +1,31 @@
+/* pages/pintuanOrdersList/pintuanOrdersList.wxss */
+.item{
+  margin: 10px;
+  border-bottom: 1px solid #eeeeee
+}
+.landscapeInfo image{
+  width:100%;
+  height: 100%;
+}
+.landscapeInfo .detail{
+ /* background-color: red;*/
+  font-size:10px;
+  margin-left:5px;
+}
+.landscapeInfo,.total{
+  display: flex;
+}
+.total{
+  justify-content: space-between;
+  padding: 3px;
+}
+.allTotal{
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  background-color: orangered;
+  color: white;
+  font-weight: bolder;
+  position: fixed;
+  bottom: 0px;
+}

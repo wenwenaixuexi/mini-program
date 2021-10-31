@@ -1,0 +1,24 @@
+view image{
+  margin-top:100px;
+  width: 150px;
+  height: 150px;
+  margin-left:90px;
+  }
+scroll-view{
+
+  margin-top:10rpx;
+}
+.scroll-view-x .scroll-view-item {
+  display: inline-block;
+  line-height: 20rpx;
+  background-color:orange;
+margin-left:10rpx;
+border-radius:20rpx;
+
+}
+
+.scroll-view-item .on{
+  border:3px solid #fefefe;
+
+
+}

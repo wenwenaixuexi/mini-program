@@ -1,0 +1,65 @@
+
+<view class="minebu">
+  <view class="produce">
+ 
+<image src="../../images/shou.png"></image>
+
+
+<view>让兴趣不再孤单,让爱好不再流浪！</view>
+
+</view>
+  <view class="sub_nav">
+    <navigator wx:for="{{navList}}" wx:key="{{index}}" url="{{item.page}}" class="nav_item">
+      <image src="../../images/{{item.icon}}" />
+      <text>{{item.name}}</text>
+    </navigator>
+  </view>
+  <view class="swiperbu">
+    <swiper autoplay interval="1000" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+      <swiper-item>
+        <image src="https://s2.ax1x.com/2019/12/07/QteL5Q.png" mode="widthFix" bindtap="jingqu1"/>
+      </swiper-item>
+      <swiper-item>
+        <image src="https://s2.ax1x.com/2019/12/07/QteqUg.png" mode="widthFix" />
+      </swiper-item>
+      <swiper-item>
+        <image src="https://s2.ax1x.com/2019/12/07/QteqUg.png" mode="widthFix" />
+      </swiper-item>
+      <swiper-item>
+        <image src="https://seopic.699pic.com/photo/50123/3906.jpg_wh1200.jpg" mode="widthFix" />
+      </swiper-item>
+      <swiper-item>
+        <image src="https://img.alicdn.com/imgextra/i4/2690364384/O1CN01sSgddJ1iFuzD6GadY_!!0-item_pic.jpg"
+          mode="widthFix" />
+      </swiper-item>
+    </swiper>
+  </view>
+<view class="detail">
+  <view class="bar">
+    <button class="box" bindtap="toTravel">
+      <image class='dingima' src="../../images/smart.png"></image>
+      <text>特色活动</text>
+    </button>
+    <button class="box" bindtap="Coupon">
+      <image class='dingima' src="../../images/smart.png"></image>
+      <text>优惠券</text>
+    </button>
+  </view>
+  <view class="bar">
+    <button class="box" bindtap="toTravel">
+      <image class='dingima' src="../../images/smart.png"></image>
+      <text>旅游拼团</text>
+    </button>
+    <button class="box" bindtap="contact">
+      <image class='dingima' src="../../images/smart.png"></image>
+      <text>联系客服</text>
+    </button>
+ 
+    
+  </view>
+
+
+  </view>
+
+  
+  </view>

@@ -1,0 +1,14 @@
+<!--pages/mine/Coupon/Coupon.wxml-->
+<view class="order">
+  <view class="btm">
+    <image class="tixing" src="https://tqimg.idongde.com/d/2020/01/10/1578630059796869.jpg"></image>
+    <text class="zhanshi">中国古代辉煌文明的一张金字名片，被誉为世界十大古墓稀世珍宝之一</text>
+    <button bindtap="chufa"class="but">参与拼团</button>
+  </view>
+  <view class="btm">
+    <image class="tixing" src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2033098625,3551829079&fm=26&gp=0.jp"></image>
+    <text class="zhanshi">“关中塔庙始祖”之称，周魏以前称作“阿育王寺”，隋文帝时改称“成实道场”，唐高祖时改名“法门寺”。法门寺被誉为皇家寺庙，因安置释迦牟尼佛指骨舍利而成为举国仰望的佛教圣地。法门寺佛塔被誉为“护国真身宝塔”。寺庙所在的法门寺文化景区为国家AAAAA级旅游景区。</text>
+    <button bindtap="chufa"class="but">参与拼团</button>
+  </view>
+  </view>
+  

@@ -1,0 +1,70 @@
+<view class="user_info_wrap">
+    <view wx:if="{{userinfo.avatarUrl}}" class="user_img_wrap">
+        <image  class="user_bg" src="{{userinfo.avatarUrl}}" />
+        <view class="user_info">
+            <image class="user_icon" src="{{userinfo.avatarUrl}}" />
+            <view class="user_name">{{userinfo.niceName}}</view>
+        </view>
+    </view>
+    <view wx:else class="user_btn">
+    <button type="primary" open-type="getUserInfo" bindgetuserinfo="handleGetuserInfo">
+            登录
+    </button>
+    </view>
+</view>
+
+<view class="user_content">
+    <view class="user_main">
+        <view class="history_wrap">
+           
+        </view>
+        <view class="orders_wrap">
+            <view class="orders_title" bindtap="myOrders">我的订单</view>
+            <view class="orders_content">
+
+            </view>
+        </view>
+        <view class="address_wrap" bindtap="myAddress">
+            收货地址管理
+        </view>
+        <view class="address_wrap" bindtap="mypintuanOrders">
+            我的团
+        </view>
+        <view class="app_info_wrap">
+            <view class="info_item info_contact">
+                <text >联系客服</text>
+                <text >400-618-4000</text>
+            </view>
+            <navigator url="../contact/contact" class="info_item">意见反馈</navigator>
+     
+        </view>
+        <button class="recommend_wrap" open-type="share">
+            把应用推荐给其他人
+        </button>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

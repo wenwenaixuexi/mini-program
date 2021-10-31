@@ -1,0 +1,54 @@
+<!--pages/group/info.wxml-->
+<block wx:for="{{landscapeShowList}}" wx:key="this">
+  <view class="item">
+<view class="grouping">
+  <block>
+    <view class="group-goods">
+      <view class="pull-left">景点名称</view>
+      <view class="pull-right">
+        {{item.detail.landscapeName}}
+      </view>
+      <image class="images1" src="{{item.detail.landscapePic}}" mode="aspectFill">
+      </image>
+      <text class="produce"> {{item.detail.landscapeDec}}
+        </text>
+      <image class="images2" src="{{item.detail.landscapeRoute}}"></image>
+      <view class="goods-info">
+        <view class="goods-sale">{{item.detail.landscapeJoin}}</view>
+        <view class="goods-price">价格：{{item.detail.landscapePrice}}</view>
+      </view>
+    </view>
+    <view class="notice">
+      <view class="over">
+        还差
+        <text class="text-red">{{item.detail.landscapeCode}}</text>人
+        <view class="container">
+          <view class="flex-wrp" style="flex-direction:row;">
+            还剩:
+            <view class="flex-item">{{h}}小时</view>
+            <view class="flex-item">{{m}}分</view>
+            <view class="flex-item">{{s}}秒</view>结束
+          </view>
+          <view style="padding: 30rpx 24rpx;">
+            <button class="btn" open-type="share"  bindtap="topintuanOrders" data-id="{{index}}" >邀请好友参团</button>
+          </view>
+          <view style="padding: 30rpx 24rpx;">
+            <button class="btn" bindtap="topintuanOrders" data-id="{{index}}">参与拼团</button>
+        
+        <!--  <view>
+        收藏<image style="width:20px;height:20px" bindtap="toLove" data-id="{{index}}"></image> 
+      </view>-->
+          </view>
+      <view style="padding: 30rpx 24rpx;">
+            <button class="btn"  bindtap="topsingleOrders" data-id="{{index}}" >单独购买</button>
+          </view>
+
+        </view>
+      </view>
+    </view>
+  </block>
+
+
+</view>
+</view>
+</block>

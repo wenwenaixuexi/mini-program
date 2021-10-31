@@ -1,0 +1,29 @@
+<block wx:for="{{landscapepintuanOrdersList}}" wx:key="this">
+  <view class="item">
+    <view class="landscapeInfo">
+      <image style="width:80px;height:80px" src="{{item.detail.landscapePic}}"></image>
+      <view class="detail">
+        <view class="jieshao">
+          <view class="title">
+            景点名称：
+          </view>
+          {{item.detail.landscapeName}}
+        </view>
+
+        <view class="jieshao">
+          <view class="title">
+            商品简介：
+          </view>
+          {{item.detail.landscapeDec}}
+        </view>
+  
+      </view>
+    </view>
+  </view>
+</block>
+
+<block wx:for="{{landscapepintuanOrdersList}}" wx:key="this">
+  <view class="title">直播地址：{{item.detail.landscapezhibo}}</view>
+
+  <button class="title" bindtap="jinian"> 购买纪念品</button>
+</block>
